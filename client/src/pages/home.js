@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import io from "socket.io-client";
-const socket = io("http://10.30.16.33:3030");
+const socket = io("http://localhost:5000");
 
 class home extends Component {
 

@@ -1,0 +1,20 @@
+{
+  "name": "socketchat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "nodemon app.js",
+    "start": "concurrently  \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "nodemon": "^1.14.3",
+    "socket.io": "^2.2.0"
+  }
+}

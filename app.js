@@ -5,6 +5,7 @@ const io = require('socket.io')(server);
 var nameCollection = [];
 var messageCollection = [];
 var i = 0;
+var OnlineUsers = [{"id": 1,"name": "Louis Litt","photo": "louislitt.png","status": "online","lastmessage": "You just got LITT up, Mike."},{"id": 2,"name": "Harvey Specter","photo": "harveyspecter.png","status": "online","lastmessage": "Wrong. You take the gun, or you"},{"id": 3,"name": "Rachel Zane","photo": "rachelzane.png","status": "online","lastmessage": "I was thinking that we could have."},{"id": 4,"name": "Donna Paulsen","photo": "donnapaulsen.png","status": "online","lastmessage": "Mike, I know everything! I'm Donna.."},{"id": 5,"name": "Mike Ross","photo": "mikeross.png","status": "online","lastmessage": "Rachel, I know everything! I'm Donna.."}];
 
 var port = process.env.PORT || 4001;
 
@@ -12,6 +13,7 @@ app.use(express.static(__dirname + '/'));
 
 io.on('connection', client => {
 
+  // get collection of names
   client.on('get_names', () => {
     io.sockets.emit('namecollection', nameCollection)
   })
@@ -38,40 +40,4 @@ server.listen(port, function(){
   console.log('listening on *:3030');
 });
 
-var OnlineUsers = [
-  {
-    "id": 1,
-    "name": "Louis Litt",
-    "photo": "louislitt.png",
-    "status": "online",
-    "lastmessage": "You just got LITT up, Mike."
-  },
-  {
-    "id": 2,
-    "name": "Harvey Specter",
-    "photo": "harveyspecter.png",
-    "status": "online",
-    "lastmessage": "Wrong. You take the gun, or you"
-  },
-  {
-    "id": 3,
-    "name": "Rachel Zane",
-    "photo": "rachelzane.png",
-    "status": "online",
-    "lastmessage": "I was thinking that we could have."
-  },
-  {
-    "id": 4,
-    "name": "Donna Paulsen",
-    "photo": "donnapaulsen.png",
-    "status": "online",
-    "lastmessage": "Mike, I know everything! I'm Donna.."
-  },
-  {
-    "id": 5,
-    "name": "Mike Ross",
-    "photo": "mikeross.png",
-    "status": "online",
-    "lastmessage": "Rachel, I know everything! I'm Donna.."
-  }
-];
+

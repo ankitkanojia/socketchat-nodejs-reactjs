@@ -9,6 +9,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <Switch>
+          {/* Added Routing */}
           <Route exact path='/' component={Home} />
           <Route exact path='/chat' component={Chat} />
         </Switch>

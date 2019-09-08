@@ -27,8 +27,8 @@ class home extends Component {
             <React.Fragment>
                 <div className="jumbotron text-center">
                     <div className="cContainer">
-                        <h1>Chat App</h1>
-                        <p>Please enter your name.</p>
+                        <h1>Socket Chat App</h1>
+                        <p>Please enter user name.</p>
                         <div className="row">
                             <div className="col-md-12">
                                 <p><input onChange={this.handleChange.bind(this)} type="text" value={this.state.name} /></p>

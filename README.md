@@ -14,4 +14,4 @@ Socket.IO primarily uses the WebSocket protocol with polling as a fallback optio
   
 ## Login Screen
 
-<p style="display:block; text-align:center"><a  target="_blank" href="https://raw.githubusercontent.com/ankitkanojia/socketchat-nodejs-reactjs/master/Login%20Screen.png"><img  hspace="20"style="padding:20px;" height="200" width="200" src="https://raw.githubusercontent.com/ankitkanojia/socketchat-nodejs-reactjs/master/Login%20Screen.png" alt="Login screen" /></a></p>
+<p style="display:block; text-align:center"><a  target="_blank" href="https://raw.githubusercontent.com/ankitkanojia/socketchat-nodejs-reactjs/master/Login%20Screen.png"><img hspace="20"style="padding:20px;" height="300" width="400" src="https://raw.githubusercontent.com/ankitkanojia/socketchat-nodejs-reactjs/master/Login%20Screen.png" alt="Login screen" /></a></p>

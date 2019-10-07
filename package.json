@@ -8,7 +8,7 @@
     "server": "nodemon app.js",
     "start": "concurrently  \"npm run server\" \"npm run client\""
   },
-  "author": "",
+  "author": "Ankit Kanojia",
   "license": "ISC",
   "dependencies": {
     "concurrently": "^4.1.0",
